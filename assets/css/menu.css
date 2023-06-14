@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans&display=swap");
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 3.125em;
+    margin-top: 1em;
+}
+
+.menu a{
+    color: #BEE8E4;
+    text-decoration: none;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.menu ul li {
+    display: inline-flex;
+    margin: 1em;
+}
+
+.logo {
+    height: 80%;
+}
+
+
+@media screen and (min-width: 1024px){
+    .menu a:hover {
+        font-weight: 600;
+        color: #f1f1f1;
+        transition: font-weight 0.1s;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+            width: 0;
+        }
+    
+        .menu ul {
+            display: none;
+            font-size: 0.7em;
+        }
+    
+        .logo {
+            display: none;
+        }
+    
+        .menu-mobile {
+            padding: 1em;
+            width: 90%;
+        }
+    
+        .side-panel {
+            width: 0px;
+            position: fixed;
+            z-index: 1;
+            height: 100%;
+            width: 35%;
+            transition: width 0.5s;
+            top: 0;
+            left: 0;
+            background-color: #fefefe;
+            overflow-x: hidden;
+        }
+    
+        .side-panel a {
+            margin-top: 1em;
+            padding: 8px 8px 8px 32px;
+            font-family: 'Open Sans', 'sans-serif';
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 1em;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+
+
+}
+
+@media screen and (max-width: 768px){
+    .menu-mobile{
+        width: 95%;
+    }
+
+    .side-panel {
+        width: 60%;
+    }
+
+}

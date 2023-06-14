@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans&display=swap");
+
+body {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+h1, h3, h5 { font-family: 'Montserrat', sans-serif; }
+
+h1 {
+    font-weight: 800;
+    color: #f1f1f1;
+}
+
+h3, h5 {
+    font-weight: 600;
+    color: #3F4549;
+    margin-bottom: 1em;
+}
+
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #757376;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-size: 1em;
+}
+
+p strong { font-weight: 700; }
+
+.container {
+    min-width: 375px;
+    max-width: 1440px;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    position: relative;
+    margin-top: 2em;
+    width: 90%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center { align-items: center; }
+
+.justify-center { justify-content: center; }
+
+.grafismo {
+    position: absolute;
+    top: 235px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-image: url(../img/lixão.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 8px 10px rgba(156, 156, 180, 0.2)) drop-shadow(0px 6px 30px rgba(156, 156, 180, 0.12)) drop-shadow(0px 16px 24px rgba(156, 156, 180, 0.14));
+}
+
+.title{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title p {
+    font-size: 0.90em;
+    color: #f1f1f1;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.voce-sabia { padding: 18% 0 0 8%;}
+
+.card-grafico { 
+    width: 80%;
+    margin-top: 3em;
+}
+
+.card-grafico div {
+    width: 70%;
+    margin-left: 1em;
+}
+
+.mapa { height: 800px; }
+
+.card-texto {
+    width: 33%;
+    margin-left: 12%;
+    margin-top: 7%;
+}
+
+.card-texto-bg {
+    width: 35%;
+    background-color: #fefefe;
+    padding: 24px;
+    box-shadow: 0px 8px 10px rgba(17, 62, 100, 0.2), 0px 6px 30px 
+    rgba(17, 62, 100, 0.12), 0px 16px 24px 
+    rgba(17, 62, 100, 0.14);
+    border-radius: 12px;
+    align-self: center;
+    text-align: center;
+}
+
+.card-texto-bg h3 {
+    color: #113E64;
+}
+
+.impactos{
+    background-image: url(../img/bg-sustentabilidade.png);
+    background-size: cover;
+    height: 1377px;
+    position: relative;
+}
+
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3.75em;
+        line-height: 62px;
+    }
+
+    h3 {
+        font-size: 2.12em;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header {
+        align-items: center;
+    }
+
+    .title h1 {
+        font-size: 3em;
+        line-height: 52px;
+    }
+
+    .title p {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+}
